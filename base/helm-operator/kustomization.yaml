@@ -1,0 +1,3 @@
+resources:
+  - flux-helm-operator-account.yaml
+  - helm-operator-deployment.yaml

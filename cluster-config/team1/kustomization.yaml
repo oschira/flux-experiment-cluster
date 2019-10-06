@@ -1,0 +1,15 @@
+namespace: team1
+resources:
+  - namespace.yaml
+  - rbac.yaml
+  - psp.yaml
+bases:
+  - ../../base/flux/
+  - ../../base/helm-operator/
+patchesStrategicMerge:
+  - flux-patch.yaml
+configMapGenerator:
+  - name: flux-kube-config
+    behavior: replace
+    files:
+      - kubeconfig.yaml
