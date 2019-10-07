@@ -6,5 +6,6 @@ resources:
 bases:
   - ../base/flux/
   - ../base/memcached/
+  - ../base/helm-operator/
 patchesStrategicMerge:
   - flux-patch.yaml
